@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+
+
+<body onload="set_style_from_cookie()">
+
+{{ partial "nav.html" . }}
+{{ partial "profile.html" . }}
+
+<section id="wrapper" class="home">
+    {{ .Content }}
+
+    {{ partial "footer.html" . }}
+</section>
+
+{{ partial "js.html" . }}
+</body>
